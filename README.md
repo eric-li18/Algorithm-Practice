@@ -1,7 +1,9 @@
 # Algorithm Practice
-A repository for solutions to algorithm problem sets. 
+A repository to document my progression in developing, implementing, and polishing my knowledge of algorithms.
 
-Most problems will be solved in C, C++ and occasionally Python or Java.
+
+_Most of you are familiar with the virtues of a programmer. There are three, of course: laziness, impatience, and hubris._                 
+_- Larry Wall_
 
 # Websites for Problem Sets
 - [CodeChef](https://www.codechef.com/problems/school)
@@ -9,9 +11,16 @@ Most problems will be solved in C, C++ and occasionally Python or Java.
 - [Coderbyte](https://www.coderbyte.com/challenges)
 - [Project Euler](https://projecteuler.net/archives)
 - [SPOJ](https://www.spoj.com/problems/classical/)
+- [DMOJ](https://dmoj.ca/)
+
+# Coding in
+- C
+- C++
+- Python
+- Java
 
 # Practiced Algorithms
-## Top 5 
+### Top 5 Algorithms
 1. [ ] Binary Search ([Tutorial](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/), [Implementation](http://geeksquiz.com/binary-search/), [Problems](http://www.spoj.com/problems/AGGRCOW))
 2. [ ] Quicksort ([Tutorial](http://help.topcoder.com/data-science/competing-in-algorithm-challenges/algorithm-tutorials/sorting/), [Implementation](http://geeksquiz.com/quick-sort/))
 3. [ ] Merge Sort ([Tutorial](http://help.topcoder.com/data-science/competing-in-algorithm-challenges/algorithm-tutorials/sorting/), [Implementation](http://geeksquiz.com/merge-sort/))
