@@ -8,6 +8,7 @@ _- Larry Wall_
 # Websites for Problem Sets
 - [CodeChef](https://www.codechef.com/problems/school)
 - [HackerRank](https://www.hackerrank.com/dashboard)
+  - [Profile](https://www.hackerrank.com/erickh_li?hr_r=1)
 - [Coderbyte](https://www.coderbyte.com/challenges)
 - [Project Euler](https://projecteuler.net/archives)
 - [SPOJ](https://www.spoj.com/problems/classical/)
