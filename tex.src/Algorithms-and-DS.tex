@@ -15,7 +15,8 @@
 \usepackage{titlesec}
 \usepackage{listings}
 \usepackage{color}
-\definecolor{gray}{rgb}{.95,.95,.95}
+\graphicspath{ {./images/} }
+\definecolor{gray}{rgb}{.98,.98,.98}
 \lstset{frame=tb,
     language=C,                % choose the language of the code
     numbers=left,                   % where to put the line-numbers
@@ -29,7 +30,9 @@
     captionpos=b,                   % sets the caption-position to bottom
     breaklines=true,                % sets automatic line breaking
     breakatwhitespace=true,         % sets if automatic breaks should only happen at whitespace
-    title=\lstname,   
+    title=\lstname,
+    frame=none,   
+    belowskip=0pt,
 }
 \renewcommand{\headrulewidth}{0pt}
 \cfoot{\sc\thepage\ of \pageref{end}}
@@ -56,7 +59,7 @@
 \tableofcontents
 \newpage
 \section{Disclaimer}
-The author(s) of this document assume(s) no responsibility or liability for any errors or omissions in the content of this document. The information contained in this site is provided on an “as is” basis with no guarantees of completeness, accuracy, usefulness or timeliness or of the results obtained from the use of this information.\\\\
+The author(s) of this document assume(s) no responsibility or liability for any errors or omissions in the content of this document. The information contained in this site is provided on an “as is” basis with no guarantees of completeness, accuracy, usefulness or timeliness or of the results obtained from the use of this information.\\[0.5\baselineskip]
 Information provided in this document has been taken from various sources and is by no means a comprehensive record of the source's views nor of the concepts represented.
 \section{Trees}
 \subsection{Structure}
@@ -65,9 +68,18 @@ Node\\
 \section{Linked Lists}
 Linked lists are helpful in addressing some of the limitations that arrays face, such as inherent dynamic memory allocation and ease of modification. Instead of memory being assigned for use (as in the programming language C) linked lists are built on the premise of allocating memory as needed, and inserting or deleting as required by the user or data set.
 \subsection{Structure}
-A linked list is a linear data structure constructed by building blocks called nodes. Like some other data structures, the node contains two items: data, which can be simple, compound, pointer, etc. and an address reference (or link to the next node). The address reference will access the next node's memory address in the list, and thus creates a linear structure\\
-
-There are two types of nodes:
+A linked list is a linear data structure constructed from building blocks called nodes. Like other data structures, a node contains two items: data, which can be simple, compound, pointer, etc. and a memory address reference (or link to the next node). The address reference will access the next node's memory address in the list, and creates a `chain-like' relationship which will naturally produce a linear structure. There are two important nodes that are called the `head node' and the `tail node', which will influence operations and be explained in depth in the following sections.
+\begin{figure}[b]
+    \centering
+    \includegraphics[scale=0.5]{linkedlist.png}
+    \caption{Linked List}
+\end{figure}
+\subsection{Operations}
+Linked lists support basic ADT operations of inserting, deleting, and modifying. \\
+More specifically, linked lists are constructed by inserting or deleting additional nodes at specified locations in the list. \\
+Insertion or deletion at the beginning or end of a list is appropriately named `Head Insertion' and `Tail Insertion' and, `Head Deletion' and `Tail Deletion'.
+\\[0.5\baselineskip]
+There are two important nodes:
 \begin{itemize}
     \item Head Node
     \begin{itemize}
@@ -84,21 +96,29 @@ There are two types of nodes:
 \begin{enumerate}
     \item Define a node
     \begin{lstlisting}
-    typedef struct int_node{
-        int stored_int; // data
-        struct int_node *ref; // address
-    } int_node;
+    typedef struct node{
+        int num; // data
+        struct node *ref; // address
+    } node;
     \end{lstlisting}
     \item Dynamic creation of nodes
     \begin{lstlisting}
-    
+    node *new_node(void){
+        node *p=NULL;
+        p=(node *)calloc(1,sizeof(node));
+        p->num=0;
+        p->ref=NULL;
+        return p;
+    }
     \end{lstlisting}
 \end{enumerate}
 
-
-
+\section{Queues}
+Queues are built heavily on concepts from linked lists and naturally, follows the same linear data structure. Queues provide a similar environment for "tail insertion" and "head deletion", which are appropriately named "enqueue" and "dequeue" respectively.
 
 
 \section{Sources}
-https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html
+https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html 
+\\
+https://medium.com/@kenny.lin/singly-linked-lists-5cfdec60bea0
 \end{document}
