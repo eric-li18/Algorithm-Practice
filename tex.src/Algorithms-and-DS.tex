@@ -60,58 +60,60 @@
 \newpage
 \section{Disclaimer}
 The author(s) of this document assume(s) no responsibility or liability for any errors or omissions in the content of this document. The information contained in this site is provided on an “as is” basis with no guarantees of completeness, accuracy, usefulness or timeliness or of the results obtained from the use of this information.\\[0.5\baselineskip]
-Information provided in this document has been taken from various sources and is by no means a comprehensive record of the source's views nor of the concepts represented.
-\section{Trees}
-\subsection{Structure}
-\subsubsection{Terminology}
-Node\\
+Information provided in this document has been taken from various sources and is by no means a comprehensive record of the source's views nor of the concepts represented.\\[1\baselineskip]
+\textbf{Note:}\\
+The concepts considered here will be largely captured in the scope of the language C, but can be generally be adapted to other languages, and are conceptually similar.
 \section{Linked Lists}
 Linked lists are helpful in addressing some of the limitations that arrays face, such as inherent dynamic memory allocation and ease of modification. Instead of memory being assigned for use (as in the programming language C) linked lists are built on the premise of allocating memory as needed, and inserting or deleting as required by the user or data set.
 \subsection{Structure}
-A linked list is a linear data structure constructed from building blocks called nodes. Like other data structures, a node contains two items: data, which can be simple, compound, pointer, etc. and a memory address reference (or link to the next node). The address reference will access the next node's memory address in the list, and creates a `chain-like' relationship which will naturally produce a linear structure. There are two important nodes that are called the `head node' and the `tail node', which will influence operations and be explained in depth in the following sections.
-\begin{figure}[b]
+A linked list is a linear data structure constructed from building blocks called nodes. Like other data structures, a node contains two items: data, which can be simple, compound, pointer, etc. and a memory address reference (or link to the next node, called a pointer in Figure 1). The address reference will access the next node's memory address in the list, and creates a `chain-like' relationship which will naturally produce a linear structure. There are two important nodes that are called the `head node' and the `tail node', which will influence operations and be explained in depth in the following sections.
+\begin{figure}[h!]
     \centering
-    \includegraphics[scale=0.5]{linkedlist.png}
+    \includegraphics[scale=0.35]{linkedlist.png}
     \caption{Linked List}
 \end{figure}
 \subsection{Operations}
-Linked lists support basic ADT operations of inserting, deleting, and modifying. \\
-More specifically, linked lists are constructed by inserting or deleting additional nodes at specified locations in the list. \\
-Insertion or deletion at the beginning or end of a list is appropriately named `Head Insertion' and `Tail Insertion' and, `Head Deletion' and `Tail Deletion'.
-\\[0.5\baselineskip]
-There are two important nodes:
+Linked lists support basic ADT operations of inserting, deleting, and modifying. For operations of inserting and deleting involving the head or tail, implementation requires several changes, but operates in a similar manner nonetheless.\\[0.5\baselineskip]
+In order to understand operations on linked lists, we must identify what head pointers or head memory address are. Intuitively, the head address's are used to keep track of the linked list and allow for access on all functions. Without the head pointer, we lose the key to the linked list and are unable to both operate, and modify the list.\\[0.5\baselineskip] Therefore, it \textbf{imperative} that we return new head address's when modifications to the linked list occur that will affect it.
+\subsubsection{Insertion}
+Conceptually, inserting requires a list traversal to the desired point of insertion and memory address manipulation so that the address reference of the nodes link together appropriately.\\[0.5\baselineskip]
+\textbf{Inserting in Linked Lists}\\
+Inserting inside the list requires a few steps;
 \begin{itemize}
-    \item Head Node
-    \begin{itemize}
-        \item Head insertion is much quicker due to the lack of list traversing done
-    \end{itemize}
-    \item Tail Node
-    \begin{itemize}
-        \item Has an address reference of NULL
-        \item Entire list must be traversed before tail insertion can occur
-    \end{itemize}
+    \item Traversal of the list to the desired location
+    \item Accessing the previous node's reference to the succeeding node
+    \item Setting the memory address of the succeeding node to the address link of the inserted node (linking inserted node to next node)
+    \item Set the memory address of the inserted node to the address link of the previous node (linking inserted node with previous node)
+    \item Return the new head address
 \end{itemize}
-
-\subsection{Basic Implementation}
-\begin{enumerate}
-    \item Define a node
-    \begin{lstlisting}
-    typedef struct node{
-        int num; // data
-        struct node *ref; // address
-    } node;
-    \end{lstlisting}
-    \item Dynamic creation of nodes
-    \begin{lstlisting}
-    node *new_node(void){
-        node *p=NULL;
-        p=(node *)calloc(1,sizeof(node));
-        p->num=0;
-        p->ref=NULL;
-        return p;
-    }
-    \end{lstlisting}
-\end{enumerate}
+Similarly, this can be adapted for \textbf{inserting at tail}.\\[.5 \baselineskip]
+\textbf{Insertion at Head}\\
+Inserting at the head of the list is by far the quickest insertion due to the lack of list traversal and ease of access to the head. Because of this, inserting at the head requires much fewer steps;
+\begin{itemize}
+    \item Access the head memory address
+    \item Set the address to the memory link of the inserted node
+    \item Set the head pointer to the inserted node's memory address(thereby setting the inserted node as the head)
+    \item Return the new head address
+\end{itemize}
+As we can see, the steps are much more straight-forward and as such, if the items do not require a methodical order or specific location of insertion, inserting at the head is recommended.
+\subsubsection{Deletion}
+Conversely, we have deletion which follows a similar format as insertion of nodes;\\[0.5\baselineskip]
+\textbf{Deleting in Linked Lists}\\
+Deleting in linked lists requires several steps;
+\begin{itemize}
+    \item Traversal of the list to the desired node
+    \item Accessing the previous node's reference to the node to delete
+    \item Setting the previous node's reference to the node to delete's reference 
+    \item Free the node to delete from memory
+    \item Return the new head address
+\end{itemize}
+While this may be conceptually hard to grasp at first, when the implementation is shown, deleting will be much more clear and evident. Intuitively, we are aiming to delete the node, while allowing the previous node to preserve the connection with the succeeding nodes.\\[0.5\baselineskip]
+\textbf{Deletion at Head}\\
+With a basic understanding of deleting and inserting in a linked list, deleting at the head, is quite rudimentary;
+\begin{itemize}
+    \item Free the head node to delete it from memory
+    \item Return the new head address
+\end{itemize}
 
 \section{Queues}
 Queues are built heavily on concepts from linked lists and naturally, follows the same linear data structure. Queues provide a similar environment for "tail insertion" and "head deletion", which are appropriately named "enqueue" and "dequeue" respectively.

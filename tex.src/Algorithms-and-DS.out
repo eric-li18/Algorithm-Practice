@@ -1,10 +1,8 @@
 \BOOKMARK [1][-]{section.1}{Disclaimer}{}% 1
-\BOOKMARK [1][-]{section.2}{Trees}{}% 2
+\BOOKMARK [1][-]{section.2}{Linked Lists}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Structure}{section.2}% 3
-\BOOKMARK [3][-]{subsubsection.2.1.1}{Terminology}{subsection.2.1}% 4
-\BOOKMARK [1][-]{section.3}{Linked Lists}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{Structure}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{Operations}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.3}{Basic Implementation}{section.3}% 8
-\BOOKMARK [1][-]{section.4}{Queues}{}% 9
-\BOOKMARK [1][-]{section.5}{Sources}{}% 10
+\BOOKMARK [2][-]{subsection.2.2}{Operations}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Insertion}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Deletion}{subsection.2.2}% 6
+\BOOKMARK [1][-]{section.3}{Queues}{}% 7
+\BOOKMARK [1][-]{section.4}{Sources}{}% 8

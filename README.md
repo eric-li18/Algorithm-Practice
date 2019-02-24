@@ -2,7 +2,7 @@
 A repository to document my progression in developing, implementing, and polishing my knowledge of algorithms and data structures.
 
 ![Djikstra's Algorithm](https://i.gifer.com/8EI2.gif "Dijkstra's Algorithm")
-
+****
 _Most of you are familiar with the virtues of a programmer. There are three, of course: laziness, impatience, and hubris._                 
 _- Larry Wall_
 
@@ -12,10 +12,10 @@ _- Larry Wall_
 ### C
 Level of Difficulty|Completed/Total
 -------------------|----------------:
-Easy|11/12
-Medium|4/9
+Easy|12/12
+Medium|5/9
 Hard|0/4
-Total: 15/25
+Total: 17/25
 
 
 # Practiced Data Structures
@@ -46,4 +46,6 @@ Total: 15/25
 - [Project Euler](https://projecteuler.net/archives)
 - [SPOJ](https://www.spoj.com/problems/classical/)
 - [DMOJ](https://dmoj.ca/)
+- [CodeForces](https://codeforces.com)
+  - [Profile](https://codeforces.com/profile/li.eric)
 
