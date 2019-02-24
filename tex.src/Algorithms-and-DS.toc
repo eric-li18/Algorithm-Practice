@@ -5,4 +5,7 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Insertion}{3}{subsubsection.2.2.1}% 
 \contentsline {subsubsection}{\numberline {2.2.2}Deletion}{3}{subsubsection.2.2.2}% 
 \contentsline {section}{\numberline {3}Queues}{4}{section.3}% 
-\contentsline {section}{\numberline {4}Sources}{4}{section.4}% 
+\contentsline {section}{\numberline {4}Additional Notes}{4}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Variadic Functions}{4}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Macros}{4}{subsection.4.2}% 
+\contentsline {section}{\numberline {5}Sources}{5}{section.5}% 

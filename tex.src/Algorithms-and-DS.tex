@@ -14,6 +14,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{titlesec}
 \usepackage{listings}
+\usepackage{inconsolata}
 \usepackage{color}
 \graphicspath{ {./images/} }
 \definecolor{gray}{rgb}{.98,.98,.98}
@@ -33,6 +34,7 @@
     title=\lstname,
     frame=none,   
     belowskip=0pt,
+    basicstyle=\ttfamily,
 }
 \renewcommand{\headrulewidth}{0pt}
 \cfoot{\sc\thepage\ of \pageref{end}}
@@ -117,7 +119,24 @@ With a basic understanding of deleting and inserting in a linked list, deleting 
 
 \section{Queues}
 Queues are built heavily on concepts from linked lists and naturally, follows the same linear data structure. Queues provide a similar environment for "tail insertion" and "head deletion", which are appropriately named "enqueue" and "dequeue" respectively.
-
+\section{Additional Notes}
+The following sections are supplementary and cover topics that may not be considered algorithms and/or data structures but are interesting nonetheless.
+\subsection{Variadic Functions}
+Conventional functions, while effective and familiar, can be basic at times, and as such, C allows for variadic functions to handle the various parameter restrictions that conventional functions have.\\[0.5\baselineskip]
+Variadic functions, as the name suggests, allows you to implement functions that take a variable number of arguments, and does this through a library in C. \\[0.5\baselineskip]
+To add this library, we must call;
+\begin{lstlisting}[belowskip=-1.80 \baselineskip]
+    #include<stdarg.h>
+\end{lstlisting}
+\subsection{Macros}
+To use variadic functions, we must use variadic functions macros to access and modify certain areas.
+\begin{itemize}
+    \item va\_list
+    \item va\_start
+    \item va\_arg
+    \item va\_end
+    \item va\_copy
+\end{itemize}
 
 \section{Sources}
 https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html 
