@@ -65,6 +65,70 @@ The author(s) of this document assume(s) no responsibility or liability for any 
 Information provided in this document has been taken from various sources and is by no means a comprehensive record of the source's views nor of the concepts represented.\\[1\baselineskip]
 \textbf{Note:}\\
 The concepts considered here will be largely captured in the scope of the language C, but can be generally be adapted to other languages, and are conceptually similar.
+
+\section{Complexity}
+There are three types of complexity:
+\begin{itemize}
+    \item Big-Omega ($\Omega$) (Best Case)
+    \item Big-Theta ($\Theta$) (Average Case)
+    \item Big-Oh ($O$) (Worst Case)
+\end{itemize}
+\textbf{Definition}\\
+The worse case time complexity of an algorithm is a function that maps input sizes ($\mathbb N$) to the running times ($\mathbb R^+$).\\[0.5\baselineskip]
+\textbf{\textit{Note:}}\\
+To find the Big-Oh of an algorithm we must determine a function that represents the worst possible running time of the algorithm for various sizes.
+\subsection{Rules}
+\begin{itemize}
+    \item We are only interested in the "biggest function"
+    \item We do not care about coefficients
+\end{itemize}
+\subsection{Examples}
+\begin{itemize}
+    \item $O(9n^2+6n+5) = O(9n^2) = O(n^2)$ 
+    \begin{itemize}
+        \item Since we are interested in only the biggest function (largest power) and no coefficients
+    \end{itemize} 
+    \item $O(n+\log n +5) = O(n)$ 
+    \begin{itemize}
+        \item We are interested in only the biggest function (largest power)
+    \end{itemize} 
+    \item $O(n\log) = O(n\log)$ \begin{itemize}
+        \item Irreducible because it is a product of functions
+    \end{itemize} 
+    \item $O(7) = O(1)$
+\end{itemize}
+\subsection{How to find Big-Oh for code:}
+\begin{itemize}
+    \item Straight line code is $O(1)$ 
+    \begin{itemize}
+        \item "straight-line code" only runs once regardless of list size
+    \end{itemize}
+    \item For "if" statements, the Big-Oh is the biggest function of any case
+    \item For "loops", the Big-Oh is the number of times that loop iterates multiplied by the Big-Oh of the inner code
+\end{itemize}
+Now the Big-Oh of the algorithm is the \textbf{most expensive} (simplified) function generated from the code.\\[.5\baselineskip]
+\textbf{Example:}
+\begin{lstlisting}
+    int main(){
+        int n = [user input]................\\O(1)
+        int sum = 0;........................\\O(1)
+        int i,j,k;..........................\\O(1)
+        if (n==7){.........................\\O(1)
+            return 1;.......................\\O(1)
+        }
+        else{ 
+            for(i = 1;i<n;i*=2){............\\O(log n)
+                for(j=n;j>0;j/=2){..........\\O(log n)
+                    for(k=j;k<n;k+=2){......\\O(n)
+                        sum +=(i+j+k);......\\O(1)
+                    }
+                }
+            }
+        }
+    }
+\end{lstlisting}
+If we consider the $else$ block, we can multiply the worst case complexities and get $O(n(\log n)^2)$ from multiplying the outer for loop, the first nested, and the second nested loop, as well as the straight line code above.\\[0.5\baselineskip]
+We do not consider the $if$ block since the $if$ block is not the worst case complexity.
 \section{Linked Lists}
 Linked lists are helpful in addressing some of the limitations that arrays face, such as inherent dynamic memory allocation and ease of modification. Instead of memory being assigned for use (as in the programming language C) linked lists are built on the premise of allocating memory as needed, and inserting or deleting as required by the user or data set.
 \subsection{Structure}

@@ -1,11 +1,15 @@
 \BOOKMARK [1][-]{section.1}{Disclaimer}{}% 1
-\BOOKMARK [1][-]{section.2}{Linked Lists}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Structure}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Operations}{section.2}% 4
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Insertion}{subsection.2.2}% 5
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Deletion}{subsection.2.2}% 6
-\BOOKMARK [1][-]{section.3}{Queues}{}% 7
-\BOOKMARK [1][-]{section.4}{Additional Notes}{}% 8
-\BOOKMARK [2][-]{subsection.4.1}{Variadic Functions}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.2}{Macros}{section.4}% 10
-\BOOKMARK [1][-]{section.5}{Sources}{}% 11
+\BOOKMARK [1][-]{section.2}{Complexity}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Rules}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Examples}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{How to find Big-Oh for code:}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Linked Lists}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Structure}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Operations}{section.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Insertion}{subsection.3.2}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Deletion}{subsection.3.2}% 10
+\BOOKMARK [1][-]{section.4}{Queues}{}% 11
+\BOOKMARK [1][-]{section.5}{Additional Notes}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Variadic Functions}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{Macros}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Sources}{}% 15
