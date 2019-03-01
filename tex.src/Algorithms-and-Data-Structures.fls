@@ -163,6 +163,9 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT c:/Users/Eric/Documents/Algorithm Practice/tex.src/Algorithms-and-Data-Structures.toc
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
+INPUT c:/Users/Eric/Documents/Algorithm Practice/tex.src/./images/complexity.png
+INPUT ./images/complexity.png
+INPUT ./images/complexity.png
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecbi1095.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT c:/texlive/2018/texmf-dist/tex/latex/inconsolata/t1zi4.fd

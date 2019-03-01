@@ -65,7 +65,6 @@ The author(s) of this document assume(s) no responsibility or liability for any 
 Information provided in this document has been taken from various sources and is by no means a comprehensive record of the source's views nor of the concepts represented.\\[1\baselineskip]
 \textbf{Note:}\\
 The concepts considered here will be largely captured in the scope of the language C, but can be generally be adapted to other languages, and are conceptually similar.
-
 \section{Complexity}
 There are three types of complexity:
 \begin{itemize}
@@ -74,7 +73,12 @@ There are three types of complexity:
     \item Big-Oh ($O$) (Worst Case)
 \end{itemize}
 \textbf{Definition}\\
-The worse case time complexity of an algorithm is a function that maps input sizes ($\mathbb N$) to the running times ($\mathbb R^+$).\\[0.5\baselineskip]
+The worse case time complexity of an algorithm is a function that maps input sizes ($\mathbb N$) to the running times ($\mathbb R^+$).
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.25]{complexity.png}
+    \caption{Graph of Time Complexities}
+\end{figure}\\[0.5\baselineskip]
 \textbf{\textit{Note:}}\\
 To find the Big-Oh of an algorithm we must determine a function that represents the worst possible running time of the algorithm for various sizes.
 \subsection{Rules}
@@ -135,7 +139,7 @@ Linked lists are helpful in addressing some of the limitations that arrays face,
 A linked list is a linear data structure constructed from building blocks called nodes. Like other data structures, a node contains two items: data, which can be simple, compound, pointer, etc. and a memory address reference (or link to the next node, called a pointer in Figure 1). The address reference will access the next node's memory address in the list, and creates a `chain-like' relationship which will naturally produce a linear structure. There are two important nodes that are called the `head node' and the `tail node', which will influence operations and be explained in depth in the following sections.
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale=0.35]{linkedlist.png}
+    \includegraphics[scale=0.40]{linkedlist.png}
     \caption{Linked List}
 \end{figure}
 \subsection{Operations}
@@ -204,6 +208,11 @@ To use variadic functions, we must use variadic functions macros to access and m
 
 \section{Sources}
 https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html 
-\\
+\\[0.5\baselineskip]
+"Figure 1"\\
+https://medium.com/@abdurrafeymasood/understanding-time-complexity-and-its-importance-in-technology-8279f72d1c6a
+\\[0.5\baselineskip]
+"Figure 2":\\
 https://medium.com/@kenny.lin/singly-linked-lists-5cfdec60bea0
+\\
 \end{document}
