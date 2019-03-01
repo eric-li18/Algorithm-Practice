@@ -19,8 +19,8 @@ Total: 17/25
 
 
 # Practiced Data Structures
-- [ ] Arrays
-- [ ] Linked Lists
+- [x] Arrays
+- [x] Linked Lists
 - [ ] Trees
 - [ ] Stacks
 - [ ] Queues
