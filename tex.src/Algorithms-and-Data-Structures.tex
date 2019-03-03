@@ -1,15 +1,12 @@
-\documentclass[11pt]{article}
+\documentclass[hidelinks,11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{fullpage}
 \usepackage{textcomp}
 \usepackage{amsmath,amssymb}
-\usepackage{setspace}
 \usepackage[colorlinks=false]{hyperref}
-\usepackage{textcomp} 
 \usepackage{fancyhdr}
 \usepackage[pdftex]{graphicx}
 \usepackage{setspace}
-\usepackage{listings}
 \usepackage{appendix}
 \usepackage[T1]{fontenc}
 \usepackage{titlesec}
@@ -90,7 +87,7 @@ To find the Big-Oh of an algorithm we must determine a function that represents 
 \begin{itemize}
     \item $O(9n^2+6n+5) = O(9n^2) = O(n^2)$ 
     \begin{itemize}
-        \item Since we are interested in only the biggest function (largest power) and no coefficients
+        \item We are interested in only the biggest function (largest power) and not coefficients
     \end{itemize} 
     \item $O(n+\log n +5) = O(n)$ 
     \begin{itemize}
@@ -101,14 +98,14 @@ To find the Big-Oh of an algorithm we must determine a function that represents 
     \end{itemize} 
     \item $O(7) = O(1)$
 \end{itemize}
-\subsection{How to find Big-Oh for code:}
+\subsection{Finding Big-Oh for Code}
 \begin{itemize}
-    \item Straight line code is $O(1)$ 
+    \item Straight-line code is $O(1)$ 
     \begin{itemize}
         \item "straight-line code" only runs once regardless of list size
     \end{itemize}
-    \item For "if" statements, the Big-Oh is the biggest function of any case
-    \item For "loops", the Big-Oh is the number of times that loop iterates multiplied by the Big-Oh of the inner code
+    \item For $if$ statements, the Big-Oh is the biggest function of any case
+    \item For $loops$, the Big-Oh is the number of times that loop iterates multiplied by the Big-Oh of the inner code
 \end{itemize}
 Now the Big-Oh of the algorithm is the \textbf{most expensive} (simplified) function generated from the code.\\[.5\baselineskip]
 \textbf{Example:}
@@ -187,6 +184,23 @@ With a basic understanding of deleting and inserting in a linked list, deleting 
 
 \section{Queues}
 Queues are built heavily on concepts from linked lists and naturally, follows the same linear data structure. Queues provide a similar environment for "tail insertion" and "head deletion", which are appropriately named "enqueue" and "dequeue" respectively.
+\section{Binary Search Trees}
+\subsection{Structure and Properties}
+Binary search trees are an invaluable data structure to learn as they have many applications in computer science. Binary search trees are defined by several things:
+\begin{itemize}
+    \item Only having at most two children nodes, appropriately named left child, and right child
+    \item Putting all data with values less than or equal to the root, or parent node, in the left child, and all data with values greater than the root or parent node in the right child
+    \item Levels are defined by the equivalent depths on the tree
+    \begin{itemize}
+        \item Children on the same level will have the same distance to the root
+    \end{itemize}
+    \item Nodes with no children are appropriately called leaf nodes
+    \item Each level has two times the number of nodes in the last level and in general, the tree will have $2^l\ nodes,\ l\ =\ levels$ on a complete binary search tree
+    \begin{itemize}
+        \item Similarly, on level $l$ with $k$ nodes, level $0$ to $l-1$, has $k-1$ nodes in total
+    \end{itemize}
+    \item The depth of a full binary search tree with $N$ keys is $\left \lceil{\log_2 N}\right \rceil $
+\end{itemize}
 \section{Additional Notes}
 The following sections are supplementary and cover topics that may not be considered algorithms and/or data structures but are interesting nonetheless.
 \subsection{Variadic Functions}
