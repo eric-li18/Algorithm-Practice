@@ -175,6 +175,16 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4b-0.tfm
 INPUT c:/Users/Eric/Documents/Algorithm Practice/tex.src/./images/linkedlist.png
 INPUT ./images/linkedlist.png
 INPUT ./images/linkedlist.png
+INPUT c:/Users/Eric/Documents/Algorithm Practice/tex.src/./images/infix.png
+INPUT ./images/infix.png
+INPUT ./images/infix.png
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
+INPUT c:/Users/Eric/Documents/Algorithm Practice/tex.src/./images/prefix.png
+INPUT ./images/prefix.png
+INPUT ./images/prefix.png
+INPUT c:/Users/Eric/Documents/Algorithm Practice/tex.src/./images/postfix.png
+INPUT ./images/postfix.png
+INPUT ./images/postfix.png
 INPUT c:/Users/Eric/Documents/Algorithm Practice/tex.src/Algorithms-and-Data-Structures.aux
 INPUT c:/Users/Eric/Documents/Algorithm Practice/tex.src/Algorithms-and-Data-Structures.out
 INPUT c:/Users/Eric/Documents/Algorithm Practice/tex.src/Algorithms-and-Data-Structures.out

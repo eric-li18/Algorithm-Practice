@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.5)  2 MAR 2019 21:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.5)  2 MAR 2019 23:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -542,7 +542,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.59 \newpage
               [1]
-<./images/complexity.png, id=104, 1204.5pt x 841.1425pt>
+<./images/complexity.png, id=124, 1204.5pt x 841.1425pt>
 File: ./images/complexity.png Graphic file (type png)
 <use ./images/complexity.png>
 Package pdftex.def Info: ./images/complexity.png  used on input line 76.
@@ -559,45 +559,58 @@ LaTeX Font Info:    Font shape `T1/zi4/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
 (Font)              scaled to size 10.95pt on input line 113.
  [3]
-<./images/linkedlist.png, id=134, 528.97626pt x 222.8325pt>
+<./images/linkedlist.png, id=154, 528.97626pt x 222.8325pt>
 File: ./images/linkedlist.png Graphic file (type png)
 <use ./images/linkedlist.png>
-Package pdftex.def Info: ./images/linkedlist.png  used on input line 139.
+Package pdftex.def Info: ./images/linkedlist.png  used on input line 140.
 (pdftex.def)             Requested size: 211.58675pt x 89.13141pt.
  [4 <./images/linkedlist.png (PNG copy)>] [5] [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
+<./images/infix.png, id=178, 239.39438pt x 304.13625pt>
+File: ./images/infix.png Graphic file (type png)
+<use ./images/infix.png>
+Package pdftex.def Info: ./images/infix.png  used on input line 221.
+(pdftex.def)             Requested size: 191.51575pt x 243.30933pt.
+ [7 <./images/infix.png>]
+<./images/prefix.png, id=189, 238.64156pt x 306.39468pt>
+File: ./images/prefix.png Graphic file (type png)
+<use ./images/prefix.png>
+Package pdftex.def Info: ./images/prefix.png  used on input line 236.
+(pdftex.def)             Requested size: 190.91348pt x 245.11607pt.
+ [8 <./images/prefix.png>]
+<./images/postfix.png, id=200, 246.9225pt x 303.38344pt>
+File: ./images/postfix.png Graphic file (type png)
+<use ./images/postfix.png>
+Package pdftex.def Info: ./images/postfix.png  used on input line 251.
+(pdftex.def)             Requested size: 197.53824pt x 242.70708pt.
+ [9 <./images/postfix.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
 
-Overfull \hbox (48.88828pt too wide) in paragraph at lines 224--232
+Overfull \hbox (48.88828pt too wide) in paragraph at lines 287--303
 \T1/cmr/m/n/10.95 https://medium.com/@abdurrafeymasood/understanding-time-complexity-and-its-importance-in-technology-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--232
-
- []
-
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
+[10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
  (c:/Users/Eric/Documents/Algorithm Practice/tex.src/Algorithms-and-Data-Structures.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
 Package rerunfilecheck Info: File `Algorithms-and-Data-Structures.out' has not changed.
-(rerunfilecheck)             Checksum: D4AB4F6F3C7A9B09AABDFF6CFD2609BF;963.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
+(rerunfilecheck)             Checksum: 89629886DF4CC1CC6193D5CE6408CAF7;1235.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
  ) 
 Here is how much of TeX's memory you used:
- 9246 strings out of 492616
- 130166 string characters out of 6132769
+ 9285 strings out of 492616
+ 130747 string characters out of 6132769
  417841 words of memory out of 5000000
- 12970 multiletter control sequences out of 15000+600000
- 17474 words of font info for 46 fonts, out of 8000000 for 9000
+ 12987 multiletter control sequences out of 15000+600000
+ 18163 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,8n,72p,707b,1858s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "c:/Users/Eric/Documents/Algorithm Practice/tex.src/Algorithms-and-Data-Structures.pdf" (8 pages, 356502 bytes).
+Output written on "c:/Users/Eric/Documents/Algorithm Practice/tex.src/Algorithms-and-Data-Structures.pdf" (11 pages, 419226 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

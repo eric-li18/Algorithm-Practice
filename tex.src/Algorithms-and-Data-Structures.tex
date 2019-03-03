@@ -131,7 +131,8 @@ Now the Big-Oh of the algorithm is the \textbf{most expensive} (simplified) func
 If we consider the $else$ block, we can multiply the worst case complexities and get $O(n(\log n)^2)$ from multiplying the outer for loop, the first nested, and the second nested loop, as well as the straight line code above.\\[0.5\baselineskip]
 We do not consider the $if$ block since the $if$ block is not the worst case complexity.
 \section{Linked Lists}
-Linked lists are helpful in addressing some of the limitations that arrays face, such as inherent dynamic memory allocation and ease of modification. Instead of memory being assigned for use (as in the programming language C) linked lists are built on the premise of allocating memory as needed, and inserting or deleting as required by the user or data set.
+Linked lists are helpful in addressing some of the limitations that arrays face, such as inherent dynamic memory allocation and ease of modification. Instead of memory being assigned for use (as in the programming language C) linked lists are built on the premise of allocating memory as needed, and inserting or deleting as required by the user or data set. \\[0.5\baselineskip]
+Linked Lists can be built with an average complexity of $O(N)$, and searched with an average and worst case complexity of $O(N)$, and bst case complexity of $O(\frac{N}{2})$.
 \subsection{Structure}
 A linked list is a linear data structure constructed from building blocks called nodes. Like other data structures, a node contains two items: data, which can be simple, compound, pointer, etc. and a memory address reference (or link to the next node, called a pointer in Figure 1). The address reference will access the next node's memory address in the list, and creates a `chain-like' relationship which will naturally produce a linear structure. There are two important nodes that are called the `head node' and the `tail node', which will influence operations and be explained in depth in the following sections.
 \begin{figure}[h!]
@@ -181,10 +182,8 @@ With a basic understanding of deleting and inserting in a linked list, deleting 
     \item Free the head node to delete it from memory
     \item Return the new head address
 \end{itemize}
-
-\section{Queues}
-Queues are built heavily on concepts from linked lists and naturally, follows the same linear data structure. Queues provide a similar environment for "tail insertion" and "head deletion", which are appropriately named "enqueue" and "dequeue" respectively.
 \section{Binary Search Trees}
+Binary search trees have the average case search complexity of $O(\log N)$, Worst case search complexity of $O(N)$, and can be built with an average complexity of $O(N \log N)$
 \subsection{Structure and Properties}
 Binary search trees are an invaluable data structure to learn as they have many applications in computer science. Binary search trees are defined by several things:
 \begin{itemize}
@@ -201,6 +200,70 @@ Binary search trees are an invaluable data structure to learn as they have many 
     \end{itemize}
     \item The depth of a full binary search tree with $N$ keys is $\left \lceil{\log_2 N}\right \rceil $
 \end{itemize}
+\subsection{Operations}
+\subsubsection{Tree Traversals}
+There are three main traversal types which are differentiated by the order of which nodes are visited:
+\begin{itemize}
+    \item In-order/Infix Traversal
+    \item Pre-order/Prefix Traversal
+    \item Post-order/Postfix Traversal
+\end{itemize}
+\textbf{In-order/Infix Traversal}\\
+For in-order traversal, we visit nodes in three steps:
+\begin{enumerate}
+    \item Access and traverse left sub-tree
+    \item Access root node
+    \item Access and traverse right sub-tree
+\end{enumerate}
+The value of the in-order/infix traversal is that we are able to visit the nodes in a numerically/chronologically ordered fashion.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.8]{infix.png}
+    \caption{In-order/Infix Traversal}
+\end{figure}\\
+\textit{\textbf{Tip:}}\\
+Think of in-order traversing as "flagging" the nodes or drawing a line on the \textbf{bottom} of each node, and traversing the tree by connecting each "flag" or line from the left side to the right side of the tree.\\[0.5\baselineskip]
+Taking a look at Figure 1, we can see the visit order at the bottom given the labelled tree, which would produce a sorted set of numbers since we are accessing the smallest values on the left side of the tree and moving towards the larger values. \\[0.5\baselineskip] 
+\textbf{Pre-order/Prefix Traversal}\\
+For pre-order traversal, we visit nodes in three steps:
+\begin{enumerate}
+    \item Access root node
+    \item Access and traverse left sub-tree in pre-order
+    \item Access and traverse right sub-tree in pre-order
+\end{enumerate}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.8]{prefix.png}
+    \caption{Pre-order/Prefix Traversal}
+\end{figure}
+\textit{\textbf{Tip:}}\\
+Pre-order traversing "flagging" is similar to in-order traversing except we "flag" the \textbf{left} side of each node and again, move from the left side of the tree to the right. \\[0.5\baselineskip]
+Pre-order traversal is the traversal that we use if we would like to copy the binary search tree. \\[0.5\baselineskip]
+\textbf{Post-order/Postfix Traversal}\\
+For post-order traversal, we visit nodes in three steps:
+\begin{enumerate}
+    \item Access and traverse left sub-tree in post-order
+    \item Access and traverse right sub-tree in post-order
+    \item Access root node
+\end{enumerate}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.8]{postfix.png}
+    \caption{Post-order/Postfix Traversal}
+\end{figure}
+\textit{\textbf{Tip:}}\\
+Post-order traversing "flagging" is again similar to in-order traversing except we "flag" the \textbf{right} side of each node and yet again, move from the left side of the tree to the right. \\[0.5\baselineskip]
+Pre-order traversal is the traversal that we use if we would like to delete the binary search tree.
+\subsubsection{Insertion}
+\subsubsection{Deletion}
+There are three cases for deletion
+\begin{itemize}
+    \item Deleting a node with no children
+    \item Deleting a node with only one child
+    \item Deleting a node with two children
+\end{itemize}
+\section{Queues}
+Queues are built heavily on concepts from linked lists and naturally, follows the same linear data structure. Queues provide a similar environment for "tail insertion" and "head deletion", which are appropriately named "enqueue" and "dequeue" respectively.
 \section{Additional Notes}
 The following sections are supplementary and cover topics that may not be considered algorithms and/or data structures but are interesting nonetheless.
 \subsection{Variadic Functions}
@@ -228,5 +291,13 @@ https://medium.com/@abdurrafeymasood/understanding-time-complexity-and-its-impor
 \\[0.5\baselineskip]
 "Figure 2":\\
 https://medium.com/@kenny.lin/singly-linked-lists-5cfdec60bea0
-\\
+\\[0.5\baselineskip]
+"Figure 3":\\
+https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/
+\\[0.5\baselineskip]
+"Figure 4":\\
+https://www.techiedelight.com/preorder-tree-traversal-iterative-recursive/
+\\[0.5\baselineskip]
+"Figure 5":\\
+https://www.techiedelight.com/postorder-tree-traversal-iterative-recursive/
 \end{document}

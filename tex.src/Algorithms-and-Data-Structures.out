@@ -8,10 +8,14 @@
 \BOOKMARK [2][-]{subsection.3.2}{Operations}{section.3}% 8
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Insertion}{subsection.3.2}% 9
 \BOOKMARK [3][-]{subsubsection.3.2.2}{Deletion}{subsection.3.2}% 10
-\BOOKMARK [1][-]{section.4}{Queues}{}% 11
-\BOOKMARK [1][-]{section.5}{Binary Search Trees}{}% 12
-\BOOKMARK [2][-]{subsection.5.1}{Structure and Properties}{section.5}% 13
-\BOOKMARK [1][-]{section.6}{Additional Notes}{}% 14
-\BOOKMARK [2][-]{subsection.6.1}{Variadic Functions}{section.6}% 15
-\BOOKMARK [2][-]{subsection.6.2}{Macros}{section.6}% 16
-\BOOKMARK [1][-]{section.7}{Sources}{}% 17
+\BOOKMARK [1][-]{section.4}{Binary Search Trees}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Structure and Properties}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Operations}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Tree Traversals}{subsection.4.2}% 14
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Insertion}{subsection.4.2}% 15
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Deletion}{subsection.4.2}% 16
+\BOOKMARK [1][-]{section.5}{Queues}{}% 17
+\BOOKMARK [1][-]{section.6}{Additional Notes}{}% 18
+\BOOKMARK [2][-]{subsection.6.1}{Variadic Functions}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.2}{Macros}{section.6}% 20
+\BOOKMARK [1][-]{section.7}{Sources}{}% 21
