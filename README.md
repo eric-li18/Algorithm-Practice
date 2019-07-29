@@ -1,7 +1,7 @@
 # Algorithms and Data Structures
 A repository to document my progression in developing, implementing, and polishing my knowledge of algorithms and data structures.
 
-![Djikstra's Algorithm](https://i.gifer.com/8EI2.gif "Dijkstra's Algorithm")
+![Djikstra's Algorithm](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif "Dijkstra's Algorithm")
 ****
 _Most of you are familiar with the virtues of a programmer. There are three, of course: laziness, impatience, and hubris._                 
 _- Larry Wall_
@@ -21,8 +21,8 @@ Total: 17/25
 # Practiced Data Structures
 - [x] Arrays
 - [x] Linked Lists
-- [ ] Binary Search Trees
-- [ ] Stacks
+- [x] Binary Search Trees
+- [x] Stacks
 - [ ] Queues
 - [ ] Graphs
 - [ ] Hash Tables
